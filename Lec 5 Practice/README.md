@@ -30,3 +30,17 @@ take an integer n as input and print pyramid pattern. for example n = 4, the out
  *****
 *******
 ```
+
+#problem 4: Half Diamond pattern
+
+take an integer n as a input and print the half diamond pattern. for example
+
+```
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+```
