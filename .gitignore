@@ -1,1 +1,13 @@
+# C++ compiled files
 *.exe
+*.out
+*.o
+
+# VS Code/CLion settings (optional)
+.vscode/
+.idea/
+
+# Temporary/editor files
+*.log
+*.swp
+*~
