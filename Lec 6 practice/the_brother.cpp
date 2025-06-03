@@ -8,6 +8,7 @@ int main()
      int flag = 0;
      if (s1 == s2)
           flag = 1;
+
      if (flag == 1)
      {
           cout << "ARE Brothers\n";

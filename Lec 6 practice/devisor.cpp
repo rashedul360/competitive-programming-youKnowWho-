@@ -1,20 +1,17 @@
 #include <iostream>
+#include <iomanip> // for setprecision
+
 using namespace std;
 int main()
 {
      int n;
      cin >> n;
-
-     int prev = 0;
      for (int i = 1; i <= n; i++)
      {
-
-          if (prev >= n)
-               break;
-          cout << i << endl;
-          prev += i;
+          if (n % i == 0)
+          {
+               cout << i << endl;
+          }
      }
-     cout << prev << endl;
-
      return 0;
 }

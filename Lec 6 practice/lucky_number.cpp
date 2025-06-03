@@ -1,29 +1,34 @@
 #include <iostream>
 using namespace std;
+bool is_lucky(int num)
+{
+     while (num != 0)
+     {
+          int last_digit = num % 10;
+          if ((last_digit != 4) && (last_digit != 7))
+               return false;
+          num /= 10;
+     };
+     return true;
+}
 int main()
 {
      int n, m;
      cin >> n >> m;
+     bool found = false;
+
      for (int i = n; i <= m; i++)
      {
-          int k = i;
-          bool is_lucky = false;
-          while (k != 0)
+
+          if (is_lucky(i))
           {
-               int last_digit = k % 10;
-               k = k / 10;
-               if (last_digit != 4 || last_digit != 7)
-               {
-                    is_lucky = false;
-               }
-               else
-               {
-                    is_lucky = true;
-               }
-          }
-          if (is_lucky)
                cout << i << " ";
+               found = true;
+          }
      }
 
+     if (!found)
+          cout << -1;
      cout << endl;
+     return 0;
 }
