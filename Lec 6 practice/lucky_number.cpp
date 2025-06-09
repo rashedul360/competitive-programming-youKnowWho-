@@ -16,7 +16,6 @@ int main()
      int n, m;
      cin >> n >> m;
      bool found = false;
-
      for (int i = n; i <= m; i++)
      {
 
