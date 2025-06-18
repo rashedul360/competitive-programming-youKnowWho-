@@ -5,11 +5,11 @@ int main()
 {
      int n;
      cin >> n;
+
      for (int i = 1; i <= n; i++)
      {
           char c;
           cin >> c;
-
           if (c == 'c' || c == 'o' || c == 'd' || c == 'e' || c == 'f' || c == 'o' || c == 'r' || c == 'c' || c == 'e' || c == 's')
           {
                cout << "YES\n";
@@ -17,5 +17,6 @@ int main()
           else
                cout << "NO\n";
      }
+
      return 0;
 }

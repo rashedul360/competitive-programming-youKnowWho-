@@ -10,11 +10,12 @@ int main()
           int first_boy = n / i;
           int remaining = n - first_boy;
           int total = first_boy + remaining;
-          if ((first_boy % 2 == 0) && (remaining % 2 == 0) && n == total && remaining != 0)
+          if ((first_boy % 2 == 0) && (remaining % 2 == 0) && remaining != 0)
           {
 
                flag = true;
           }
+          cout << flag << endl;
      }
      if (flag)
      {
@@ -25,5 +26,5 @@ int main()
           cout << "NO\n";
      }
 
-     return 0;
+          return 0;
 }
